@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Component
 public class WeatherService {
-    private static final String apiKey="30848370b6f30f7f604f95f480aefd89";
+    private static final String apiKey="107f3db199c0a352bc0b1ffafdcca7e6";
     private static final String API="https://api.weatherstack.com/current?access_key=API_KEY&query=CITY";
 
     @Autowired
