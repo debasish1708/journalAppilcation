@@ -3,11 +3,9 @@ package com.deba1708.journalApp.service;
 import com.deba1708.journalApp.api.response.WeatherResponse;
 import com.deba1708.journalApp.cache.AppCache;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 

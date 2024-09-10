@@ -3,9 +3,7 @@ package com.deba1708.journalApp.cache;
 import com.deba1708.journalApp.entity.ConfigJournalAppEntity;
 import com.deba1708.journalApp.repository.ConfigJournalAppRepository;
 import jakarta.annotation.PostConstruct;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;

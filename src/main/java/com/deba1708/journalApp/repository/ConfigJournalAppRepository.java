@@ -2,7 +2,6 @@ package com.deba1708.journalApp.repository;
 
 
 import com.deba1708.journalApp.entity.ConfigJournalAppEntity;
-import com.deba1708.journalApp.entity.User;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
