@@ -1,8 +1,11 @@
 package com.deba1708.journalApp.controller;
 
+import com.deba1708.journalApp.cache.AppCache;
 import com.deba1708.journalApp.entity.User;
+import com.deba1708.journalApp.repository.UserRepository;
 import com.deba1708.journalApp.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +20,7 @@ import java.util.List;
 public class AdminController {
 
     private final UserService userService;
+    private final AppCache appCache;
 
     @GetMapping("/all-users")
     public ResponseEntity<?> getAll() {
@@ -25,5 +29,10 @@ public class AdminController {
             return new ResponseEntity<>(all, HttpStatus.OK);
         }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @GetMapping("clear-app-cache")
+    public void AppCache(){
+        appCache.init();
     }
 }
