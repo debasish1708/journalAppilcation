@@ -1,6 +1,7 @@
 package com.deba1708.journalApp.entity;
 
 
+import com.deba1708.journalApp.enums.Sentiment;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
@@ -20,6 +21,7 @@ import java.time.LocalDateTime;
 public class JournalEntry {
     @Id
     private ObjectId id;
+
     @NonNull
     @NotBlank
     private String title;
@@ -27,8 +29,8 @@ public class JournalEntry {
     @NotNull
     @NotBlank
     private String content;
-    
     private LocalDateTime date;
+    private Sentiment sentiment;
 }
 
 // Document is for Interact with Database which field and collections are to be created
